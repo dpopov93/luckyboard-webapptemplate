@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="app">
             <div class="app__icon">
-                <i class="fas fa-broom"></i>
+            <i class="far fa-window-maximize"></i>
             </div>
             <h2 class="app__name">New WebApp</h2>
             <p class="app__description">This is WebApp template for creating application. You may change this description</p>
