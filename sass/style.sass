@@ -1,0 +1,90 @@
+$text-color: #ffffff
+$background-color: #120E28
+$frames-color: $text-color
+$icon-color: #d2186f
+$speed: 0.3s all
+    
+
+@mixin flex-center()
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+@mixin flex-center2()
+    display: flex
+    align-items: center
+
+body, html
+    background: $background-color
+    color: $text-color
+    font-family: 'Montserrat', sans-serif
+    height: 98vh
+    padding: 0
+    margin: 0
+
+.wrapper
+    @include flex-center()
+    height: 98vh
+
+.wrapper .app
+    @include flex-center()
+    border: solid 1px rgba($frames-color, .1)
+    background: rgba($frames-color, .1)
+    transition: $speed
+    border-radius: 2%
+    padding: 30px
+
+.wrapper .app:active
+    transform: translateY(10px)
+
+.wrapper .app:hover
+    border: solid 1px rgba($frames-color, .2)
+    background: rgba($frames-color, .2)
+    cursor: pointer
+
+.wrapper .app__name
+    display: block
+
+.wrapper .app__description
+    width: 256px
+    line-height: 22px
+
+.wrapper .app__icon
+    @include flex-center2()
+    justify-content: center
+    line-height: 256px
+    font-size: 120px
+    text-align: center
+    width: 200px
+    height: 200px
+    background: $icon-color
+    border-radius: 25%
+
+.message
+    @include flex-center2()
+    justify-content: space-between
+    content: ""
+    border: solid 1px rgba($frames-color, .1)
+    background: rgba($frames-color, .1)
+    border-radius: 1%
+    position: absolute
+    padding: 10px
+    transition: $speed
+    top: -100px
+    left: calc(50% - 160px);
+    width: 300px
+    height: 50px
+
+.message .message__text
+    padding: 0
+    font-weight: 700
+    font-size: 12px
+    text-transform: uppercase
+    padding-left: 10px
+
+.message .message__btn-close
+    cursor: pointer
+
+.message .message__btn-close:active
+    color: rgba($frames-color, .1)
