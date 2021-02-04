@@ -3,6 +3,9 @@ WebApp Template for Luckyboard.Studio
 
 [![License GPL](https://img.shields.io/badge/license-GPL-blue.svg)](LICENSE)
 
+### Screenshot
+![WebAppTemplate - screenshot](screenshot/screenshot.jpg)
+
 ### WebApp by LuckyBoard is:
 * jQuery/JavaScript/PHP/Sass Stack
 * Used BEM Methodology by Yandex
